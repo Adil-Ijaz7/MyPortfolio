@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #050505;
+  --surface: #0a0a0a;
+  --card: #121212;
+  --text: #ffffff;
+  --muted: #9ca3af;
+  --accent: #bf5af2;
+  --accent-hover: #a040d0;
+}
+
+@theme {
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(135deg, var(--text), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+  }
+
+  .section {
+    @apply py-20 md:py-28;
+  }
+
+  .container {
+    @apply mx-auto px-6 max-w-7xl;
+  }
+
+  .heading {
+    @apply font-bold tracking-tight;
+  }
+
+  .subheading {
+    @apply text-gray-400 font-medium;
+  }
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-geist-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection { background: var(--accent); color: #fff; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
+
