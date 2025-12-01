@@ -100,7 +100,7 @@ export const personalData = {
       degree: "Bachelor's degree, Computer Science",
       institution: "Sukkur IBA University",
       period: "Aug 2024 – May 2028",
-      description: "Grade: 3.62/4.0 GPA. Activities: Chess, Badminton, Football, Collaborating Programming. As a driven and curious undergraduate, I am pursuing a rigorous BS in Computer Science from a HEC-recognized and NCEAC 'W' category accredited institution. I am actively building a strong, hands-on foundation in core computing principles and development. As a dedicated problem-solver, I am committed to mastering these concepts to contribute to innovative and impactful technology projects."
+      description: "As a driven and curious undergraduate, I am pursuing a rigorous BS in Computer Science from a HEC-recognized and NCEAC 'W' category accredited institution. I am actively building a strong, hands-on foundation in core computing principles and development. As a dedicated problem-solver, I am committed to mastering these concepts to contribute to innovative and impactful technology projects."
     }
   ],
   projects: [
